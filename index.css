@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    font-family: 'Racing Sans One', cursive;
+    font-weight: bold;
+    justify-content: center;
+    background-color: #17223b;
+    color: white;
+
+}
+
+section {
+    margin: auto;
+    text-align: center;
+    background-color: #263859;
+    width: 22rem;
+    height: 35rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 1rem;
+
+
+
+}
+
+h1 {
+    position: relative;
+    font-size: 2.5rem;
+    letter-spacing: .2rem;
+}
+
+h1::after {
+    content: '';
+    position: absolute;
+    width: 5rem;
+    height: 3px;
+    background-color: white;
+    bottom: 0;
+    left: 4.4rem;
+}
+
+table {
+    width: 15rem;
+    height: 10rem;
+    border-collapse: collapse;
+
+
+}
+
+
+th {
+    width: 5rem;
+    height: 5rem;
+    /* border: 2px solid black; */
+    font-size: 2.3rem;
+    /* cursor: copy; */
+
+}
+
+.col {
+    border-right: 2px solid #6b48ff;
+
+}
+
+.row {
+    border-top: 2px solid #6b48ff;
+    border-bottom: 2px solid #6b48ff;
+
+
+}
+
+.color {
+    background-color: lightgreen;
+    color: white;
+}
+
+.fsize {
+    font-size: 4rem;
+    background: linear-gradient(to left, #9dd3a8, #d9d9f3);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: textColor 1s infinite;
+}
+
+@keyframes textColor {
+    to {
+        background: linear-gradient(to left, #48604d, #6060d9);
+        background-clip: text;
+        -webkit-background-clip: text;
+    }
+
+    from {
+        background: linear-gradient(to left, #9dd3a8, #d9d9f3);
+        background-clip: text;
+        -webkit-background-clip: text;
+
+    }
+}
